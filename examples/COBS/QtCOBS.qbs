@@ -1,14 +1,20 @@
-import qbs;
+import qbs
 
 Application {
-    name: "example-cobs";
-    targetName: "QtCOBS";
+    name: "example-cobs"
+    targetName: "QtCOBS"
 
-    Depends { name: "Qt"; }
-    Depends { name: "cpp"; }
-    Depends { name: "sdk-utilities"; }
+    Depends {
+        name: "Qt.core"
+    }
+    Depends {
+        name: "cpp"
+    }
+    Depends {
+        name: "sdk-utilities"
+    }
     Group {
-        name: "C++ sources";
-        files: ["*.cpp"];
+        name: "C++ sources"
+        files: ["*.cpp"]
     }
 }

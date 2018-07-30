@@ -10,7 +10,7 @@
 #include "QQmlVariantListModel"
 
 static void registerQtQmlTricksModule (QQmlEngine * engine) {
-    Q_INIT_RESOURCE (components);
+    //Q_INIT_RESOURCE (components);
 
     const char * uri = "QtQmlTricks"; // @uri QtQmlTricks
     const int    maj = 1;

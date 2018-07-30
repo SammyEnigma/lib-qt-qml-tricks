@@ -7,3 +7,7 @@ Makefile
 *.save
 doc/html/
 doc/qthelp/
+
+examples/build-language-Desktop_Qt_5_9_2_clang_64bit-Debug/
+
+examples/language/moc_predefs\.h

@@ -1,25 +1,29 @@
 import qbs
 
 StaticLibrary {
-    name: "qml-js-imports";
-    targetName: "QmlJsTricks";
+    name: "qml-js-imports"
+    targetName: "QmlJsTricks"
 
-    Depends { name: "Qt"; }
-    Depends { name: "cpp"; }
-    Group {
-        name: "JavaScript modules";
-        files: "*.js";
+    Depends {
+        name: "Qt.core"
+    }
+    Depends {
+        name: "cpp"
     }
     Group {
-        name: "QML components";
-        files: "*.qml";
+        name: "JavaScript modules"
+        files: "*.js"
     }
     Group {
-        name: "QML directory";
-        files: "qmldir";
+        name: "QML components"
+        files: "*.qml"
     }
     Group {
-        name: "Qt resources";
-        files: "*.qrc";
+        name: "QML directory"
+        files: "qmldir"
+    }
+    Group {
+        name: "Qt resources"
+        files: "*.qrc"
     }
 }
